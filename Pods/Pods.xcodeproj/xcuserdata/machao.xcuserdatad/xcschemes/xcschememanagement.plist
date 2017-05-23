@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MCLearnDemo1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>iOS-Echarts-iOS-Echarts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>iOS-Echarts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>73F8829D8777D3CA2A72916CC34486FF</key>
+		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BE25869172CAD9B2542675A2FA44FEFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF38EA93C85B2EB4C51AF70570D6B6E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF5952F16FC50F0A074D3C54CB59EB15</key>
 		<dict>
 			<key>primary</key>
 			<true/>

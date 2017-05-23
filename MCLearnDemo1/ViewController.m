@@ -10,6 +10,12 @@
 #import "MVCController.h"
 #import "MVPController.h"
 #import "MVVMController.h"
+#import <AFNetworking.h>
+#import "MCLoginVC.h"
+#import "MCZXingVC.h"
+#import "MCEchartsVC.h"
+#import "MCRunTimeVC.h"
+
 
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -24,7 +30,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    self.dataArray=@[@"MVC",@"MVP",@"MVVM",@"NSThread",@"GCD",@"NSOperation"];
+    self.dataArray=@[MC_MVC,MC_MVP,MC_MVVM,MC_NSThread,MC_GCD,MC_NSOperation,MC_JiaMi,MC_SaoMiao,MC_TuBiao,MC_RunTime,MC_RunLoop];
+    
+
 }
 
 
@@ -83,7 +91,31 @@
         case 2:
             [self showMVVM];
             break;
-
+        case 6:{
+            //加密
+            [self showLgoinVC];
+        }
+            break;
+        case 7:{
+            //扫描
+            [self showZXingVC];
+        }
+            break;
+        case 8:{
+            //图标
+            [self showEchartsVC];
+        }
+            break;
+        case 9:{
+            //runtime-消息发送机制
+            [self showRunTimeVC];
+        }
+            break;
+        case 10:{
+            //runLoop
+            [self showRunLoopVC];
+        }
+            break;
         default:
             break;
     }
@@ -108,6 +140,36 @@
     MVVMController *mvvmController=[MVVMController new];
     mvvmController.title=[self.dataArray objectAtIndex:2];
     [self.navigationController pushViewController:mvvmController animated:YES];
+}
+
+-(void)showLgoinVC{
+    MCLoginVC *loginVC=[MCLoginVC new];
+    loginVC.title=[self.dataArray objectAtIndex:6];
+    [self.navigationController pushViewController:loginVC animated:YES];
+}
+
+-(void)showZXingVC{
+    MCZXingVC *zxingVC=[MCZXingVC new];
+    zxingVC.title=[self.dataArray objectAtIndex:7];
+    [self.navigationController pushViewController:zxingVC animated:YES];
+
+}
+
+-(void)showEchartsVC{
+    MCEchartsVC *echartsVC=[MCEchartsVC new];
+    echartsVC.title=[self.dataArray objectAtIndex:8];
+    [self.navigationController pushViewController:echartsVC animated:YES];
+    
+}
+
+-(void)showRunTimeVC{
+    MCRunTimeVC *runTimeVC=[MCRunTimeVC new];
+    runTimeVC.title=[self.dataArray objectAtIndex:9];
+    [self.navigationController pushViewController:runTimeVC animated:YES];
+}
+
+-(void)showRunLoopVC{
+    
 }
 
 @end

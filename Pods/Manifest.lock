@@ -14,13 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - iOS-Echarts (1.4.4)
+  - MBProgressHUD (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - iOS-Echarts
+  - MBProgressHUD (~> 1.0.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  iOS-Echarts: dbc7423d861e5eedee78906a39d205b5c4da9a13
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
 
-PODFILE CHECKSUM: f4ee29d7c216b812dc441f2f1897e45c2300b646
+PODFILE CHECKSUM: 112ff5f168e044012e199e65584e9e76511b283e
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
